@@ -1,0 +1,24 @@
+    Module Module1
+    
+        Sub Main()
+            Console.WriteLine("Input x coordinate: ")
+            Dim x As Integer = Console.ReadLine()
+            Console.WriteLine("Input y coordinate: ")
+            Dim y As Integer = Console.ReadLine()
+    
+            If x > 0 And y > 0 Then
+                Console.WriteLine("Coordinate point (" & x & "," & y & ") lies in the First quadrant.")
+            ElseIf x < 0 And y > 0 Then
+                Console.WriteLine("Coordinate point (" & x & "," & y & ") lies in the Second quadrant.")
+            ElseIf x < 0 And y < 0 Then
+                Console.WriteLine("Coordinate point (" & x & "," & y & ") lies in the Third quadrant.")
+            ElseIf x > 0 And y < 0 Then
+                Console.WriteLine("Coordinate point (" & x & "," & y & ") lies in the Fourth quadrant.")
+            Else
+                Console.WriteLine("Coordinate point (" & x & "," & y & ") lies on the origin.")
+            End If
+    
+            Console.ReadLine()
+        End Sub
+    
+    End Module
